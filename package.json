@@ -1,0 +1,30 @@
+{
+  "name": "survival-guide-css-mockup",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js",
+    "build:css": "tailwind build src/style.css -o css/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KashCodes/Survival-Guide-CSS-MockUp.git"
+  },
+  "author": "Kashay Arbelo",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/KashCodes/Survival-Guide-CSS-MockUp/issues"
+  },
+  "homepage": "https://github.com/KashCodes/Survival-Guide-CSS-MockUp#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "handlebars": "^4.7.7"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.2.5",
+    "postcss": "^8.2.8",
+    "tailwindcss": "^2.0.4"
+  }
+}
