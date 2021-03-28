@@ -1,0 +1,17 @@
+<section>
+    <h2>Finish Line</h2>
+    {{!-- {{>category-post posts}} --}}
+
+    {{#if posts.length}}
+        <ol class="post-list">
+            {{#each posts as |post|}}
+                {{#if (check_if_equal category_name "finish-line")}}
+                    <li>
+                        {{> post-info post}}
+                    </li>
+                {{/if}}
+            {{/each}}
+        </ol>
+    {{/if}}
+
+</section>

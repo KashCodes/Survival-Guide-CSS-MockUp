@@ -1,0 +1,37 @@
+{{!-- USED BY controllers/home-routes.js --}}
+
+{{!-- to include a partial use > and then name of file and object passing --}}
+{{> post-info post }}
+
+{{#if loggedIn}}
+<form class="comment-form">
+  <div>
+    <textarea name="comment-body"></textarea>
+  </div>
+
+  <div>
+    <div class="buttons">
+    {{!--  if I already liked on it the session user id === the like user id      --}}
+    {{!--  if I want to remove the like i need the like id with the user id matching the session id      --}}
+
+      {{#if (check_for_user_id post.likes userId) }}
+        {{#each post.likes}}
+          {{#if (check_if_equal user_id ../userId)}}
+            <button class="liked-button" type="submit" id="like-id-{{id}}"></button>
+          {{/if}}
+        {{/each}}
+      {{else}}
+        <button class="like-button" type="submit"></button>
+      {{/if}}
+    </div>
+    <button class="submit-button" type="submit">add comment</button>
+  </div>
+</form>
+{{/if}}
+
+{{> comments post.comments}}
+
+{{#if loggedIn}}
+<script src="/javascript/comment.js"></script>
+<script src="/javascript/like.js"></script>
+{{/if}}

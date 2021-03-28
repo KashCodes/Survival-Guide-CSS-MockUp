@@ -1,0 +1,14 @@
+<section>
+    <h2>Picking A Bootcamp</h2>
+    {{#if posts.length}}
+        <ol class="post-list">
+            {{#each posts as |post|}}
+                {{#if (check_if_equal category_name "pick-camp")}}
+                    <li>
+                        {{> post-info post}}
+                    </li>
+                {{/if}}
+            {{/each}}
+        </ol>
+    {{/if}}
+</section>

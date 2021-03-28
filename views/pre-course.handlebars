@@ -1,0 +1,14 @@
+<section>
+    <h2>Pre-Course Work</h2>
+    {{#if posts.length}}
+        <ol class="post-list">
+            {{#each posts as |post|}}
+                {{#if (check_if_equal category_name "pre-course")}}
+                    <li>
+                        {{> post-info post}}
+                    </li>
+                {{/if}}
+            {{/each}}
+        </ol>
+    {{/if}}
+</section>
