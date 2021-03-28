@@ -183911,3 +183911,31 @@ video {
             animation: bounce 1s infinite;
   }
 }
+
+.gloria_font{ 
+font-family: 'Gloria Hallelujah', cursive;
+}
+
+.montserat_font { 
+font-family: 'Montserrat', sans-serif;
+}
+
+.nothing_font { 
+font-family: 'Nothing You Could Do', cursive;
+}
+
+.raleway_font { 
+font-family: 'Raleway', sans-serif;
+} 
+
+.shadows_font { 
+font-family: 'Shadows Into Light', cursive;
+}
+
+.special_font { 
+font-family: 'Special Elite', cursive;
+}
+
+.unica_font { 
+font-family: 'Unica One', cursive;
+}
