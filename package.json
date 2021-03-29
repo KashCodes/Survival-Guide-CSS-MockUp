@@ -1,30 +1,38 @@
 {
-  "name": "survival-guide-css-mockup",
+  "name": "coding-bootcamp-survival-guide",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js",
-    "build:css": "tailwind build src/style.css -o stylesheets/style.css"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/KashCodes/Survival-Guide-CSS-MockUp.git"
-  },
-  "author": "Kashay Arbelo",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/KashCodes/Survival-Guide-CSS-MockUp/issues"
-  },
-  "homepage": "https://github.com/KashCodes/Survival-Guide-CSS-MockUp#readme",
+  "description": "<h1 align=\"center\">Coding Bootcamp Survival Guide</h1>",
+  "main": "server.js",
   "dependencies": {
+    "bcrypt": "^5.0.1",
+    "connect-session-sequelize": "^7.1.1",
+    "dotenv": "^8.2.0",
     "express": "^4.17.1",
-    "handlebars": "^4.7.7"
+    "express-handlebars": "^5.2.1",
+    "express-session": "^1.17.1",
+    "handlebars": "^4.7.3",
+    "mysql2": "^2.2.5",
+    "sequelize": "^6.5.0"
   },
   "devDependencies": {
     "autoprefixer": "^10.2.5",
     "postcss": "^8.2.8",
     "tailwindcss": "^2.0.4"
-  }
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js",
+    "build:css": "tailwind build src/style.css -o public/stylesheets/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Coding-Bootcamp-Survival-Guide/Coding-Bootcamp-Survival-Guide.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Coding-Bootcamp-Survival-Guide/Coding-Bootcamp-Survival-Guide/issues"
+  },
+  "homepage": "https://github.com/Coding-Bootcamp-Survival-Guide/Coding-Bootcamp-Survival-Guide#readme"
 }
